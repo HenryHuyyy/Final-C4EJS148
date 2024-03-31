@@ -1,0 +1,140 @@
+body {
+    background-color: #f8dcc7;
+    font-family: SF Pro Display;
+}
+
+h1 {
+    color: red;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image_1 {
+    transition: .2s;
+    scale: 75%;
+    width: 200px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: white;
+    transition: transition 0.5s ease;
+    cursor: pointer;
+}
+
+.image_2 {
+    transition: .2s;
+    scale: 75%;
+    width: 200px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: white;
+    transition: transition 0.5s ease;
+    cursor: pointer;
+}
+.image_chosen {
+    padding: 5px;
+    transition: .2s;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+.image_chosen:hover {
+    transform: scale(1.25);
+}
+
+.image_container1 {
+    display: flex;
+    align-items: center;
+}
+
+.image_container2 {
+    display: flex;
+    
+    align-items: center;
+    margin-left: -1rem;
+    flex-grow: row wrap;
+}
+
+.image_container3 {
+    flex: 1 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.button_start {
+    position: absolute;
+    bottom: 600px;
+    top:auto;
+    right:70px;
+    justify-content: right;
+    width: 150px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: green;
+    color: white;
+}
+
+.button_reset {
+    position: absolute;
+    right:70px;
+    justify-content: right;
+    top: auto;
+    bottom: 200px;
+    width: 150px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: green;
+    color: white;
+}
+
+.button_image {
+    border-radius: 5px;
+    border-width: 3px;
+    margin-bottom: 10px;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 350px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+#countLabel {
+    text-align: center;
+    font-size: 30px;
+    font-family: Roboto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 equal square for random method */
+    gap: 10px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

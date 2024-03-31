@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Binh Phuong Huy - C4EJS148 - Game Bầu cua</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+</head>
+<body>
+    
+    <h1>Thử tài may mắn</h1>
+
+    <!--<nav>
+        <img class="image_1" src="/assets/bau.png" alt="Random image" width="200" height="200">
+        <img class="image_1" src="/assets/cua.png" alt="Random image" width="200" height="200">
+        <img class="image_1" src="/assets/ga.png" alt="Random image" width="200" height="200">
+    </nav> -->
+
+    <div class="container">
+        <div class="box">
+            <img src="/assets/bau.png" alt="Bau">
+            <img src="/assets/cua.png" alt="Cua">
+            <img src="/assets/ca.png" alt="Ca">
+            <img src="/assets/ga" alt="Ga">
+            <img src="/assets/tom.png" alt="Tom">
+            <img src="/assets/huou.png" alt="Huou">
+        </div>
+        <div class="box">
+            <img src="/assets/bau.png" alt="Bau">
+            <img src="/assets/cua.png" alt="Cua">
+            <img src="/assets/ca.png" alt="Ca">
+            <img src="/assets/ga" alt="Ga">
+            <img src="/assets/tom.png" alt="Tom">
+            <img src="/assets/huou.png" alt="Huou">
+        </div>
+        <div class="box">
+            <img src="/assets/bau.png" alt="Bau">
+            <img src="/assets/cua.png" alt="Cua">
+            <img src="/assets/ca.png" alt="Ca">
+            <img src="/assets/ga" alt="Ga">
+            <img src="/assets/tom.png" alt="Tom">
+            <img src="/assets/huou.png" alt="Huou">
+        </div>
+    </div>
+
+    <div>
+    <button class="button_start" onclick = "setInterval(getRandomImage, 100)">Quay</button>
+    </div>
+
+    <br>
+    <div class="buttonContainer">
+        <button class="image_chosen" id="increaseButton">
+            <img src="/assets/bau.png" alt="Bầu" style="width:50%">
+            <div id="countLabel"><b>0</b></div>
+        </button>
+
+        <button class="image_chosen" id="increaseButton">
+            <img src="/assets/cua.png" alt="Cua" style="width:50%">
+        </button>
+
+        <button class="image_chosen" id="increaseButton">
+            <img src="/assets/tom.png" alt="Tôm" style="width: 50%">
+        </button>
+
+        <button class="image_chosen" id="increaseButton">
+            <img src="/assets/ca.png" alt="Cá" style="width: 50%">
+        </button>
+
+        <button class="image_chosen" id="increaseButton">
+            <img src="/assets/huou.png" alt="Hươu" style="width: 50%">
+        </button class="image_chosen" id="increaseButton">
+
+        <button class="image_chosen" id="increaseButton">
+            <img src="/assets/ga.png" alt="Gà" style="width: 50%">
+        </button>
+    </div>
+    <!--
+    <div class="image_container2">
+        <button class="image_chosen" onclick="incrementImage()">
+            <img src="/assets/bau.png">
+            <div class="text-block">0</div>
+        </button>
+
+        <button class="image_chosen" onclick="incrementImage()">
+            <img src="/assets/cua.png">
+        </button>
+
+        <button class="image_chosen" onclick="incrementImage()">
+            <img src="/assets/tom.png">
+        </button>
+
+        <button class="image_chosen" onclick="incrementImage()">
+            <img src="/assets/ca.png">
+        </button>
+
+        <button class="image_chosen" onclick="incrementImage()">
+            <img src="/assets/huou.png">
+        </button>
+
+        <button class="image_chosen" onclick="incrementImage()">
+            <img src="/assets/ga.png">
+        </button>
+    </div>
+-->
+    <div style="padding-top: 150px;">
+    <button class="button_reset" id="resetButton">Đặt lại</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="padding-top: 300px;"><b>Lưu ý:</b> <br>
+        - Số lần đặt ở một <b>"Hình"</b> sẽ là <b>số lần xuất hiện</b> của các <b>"Hình"</b> trên kết quả
+    </p>
+    <p>
+        Tổng số điểm đặt trong một lần, tối đa là <b>3</b>
+    </p>
+</body>
+</html>
